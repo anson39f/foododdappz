@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">سائق عربي</string>
+
+    <!--Dialog-->
+    <string name="cancel_btn_txt">إلغاء</string>
+    <string name="ok_btn_txt">حسنا</string>
+    <string name="log_out_btn_txt">الخروج</string>
+    <string name="exit_btn_txt">ىخرج</string>
+    <!---->
+
+    <!--select language activity-->
+    <string name="select_language">اختر اللغة</string>
+    <string name="btn_arabic">عربى</string>
+    <string name="btn_english">English</string>
+    <string name="welcome">أهلا بك!</string>
+    <string name="welcome_content">انت على بعد خطوة واحدة للاستمتاع بأفضل تجربة تسوق على الاطلاق</string>
+    <!---->
+
+    <!--splash screen-->
+    <string name="screen_over_lay_title">Screen overlay detected</string>
+    <string name="screen_over_lay_permission_msg_txt">Please enable ACTION MANAGE OVERLAY PERMISSION to use this application.</string>
+    <string name="screen_over_lay_cancel_btn_txt">CANCEL</string>
+    <string name="screen_over_lay_ok_btn_txt">OK</string>
+    <!---->
+
+    <!--Signin-->
+    <string name="Sign_in">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="error_msg_Email">خطأ في البريد الالكتروني أو كلمة المرور</string>
+    <string name="err_msg_password"> يجب ان تحتوي كلمة المرور على الاقل ستة أحرف وعلى الأقل حرف واحد كبير</string>
+    <string name="login_type">2</string>
+    <string name="hint_dont_have_an_account">ليس لديك حساب؟</string>
+    <string name="hint_create_one">اصنع واحدا!</string>
+    <!---->
+
+    <!--ForgotPassword-->
+    <string name="forgot_pass_title">هل نسيت كلمة المرور</string>
+    <string name="submit_button">عرض</string>
+    <!---->
+
+    <!--Orders-->
+    <string name="nav_orders">أوامر</string>
+    <string name="order_date">الأربعاء، 30 أغسطس، 10:10</string>
+    <string name="order_id">معرف الطلب: 124856</string>
+    <string name="order_amount">320</string>
+    <string name="pickup">مدينة برج فندق، شارع 142، مدينة الكويت، العاصمة للوالكويت.</string>
+    <string name="destination">مدينة برج فندق والخضروات شارع السوق، مدينة الكويت، العاصمة للوالكويت.</string>
+    <!---->
+
+    <array name="order_date_array">
+        <item>الأربعاء، 30 أغسطس، 10:10</item>
+        <item>الأربعاء، 30 أغسطس، 10:10</item>
+        <item>الأربعاء، 30 أغسطس، 10:10</item>
+        <item>الأربعاء، 30 أغسطس، 10:10</item>
+    </array>
+
+    <array name="order_id_array">
+        <item>معرف الطلب: 124856</item>
+        <item>معرف الطلب: 124856</item>
+        <item>معرف الطلب: 124856</item>
+        <item>معرف الطلب: 124856</item>
+    </array>
+
+    <array name="order_amount_array">
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+    </array>
+
+    <array name="order_item_array">
+        <item>لوحة من الدجاج البرياني</item>
+        <item>لوحة من الدجاج البرياني</item>
+        <item>لوحة من الدجاج البرياني</item>
+        <item>لوحة من الدجاج البرياني</item>
+    </array>
+
+    <array name="order_quan_array">
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </array>
+
+    <array name="pick_up_array">
+        <item>مدينة برج فندق، شارع 142، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق، شارع 142، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق، شارع 142، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق، شارع 142، مدينة الكويت، العاصمة للوالكويت.</item>
+
+    </array>
+
+    <array name="destination_array">
+        <item>مدينة برج فندق والخضروات شارع السوق، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق والخضروات شارع السوق، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق والخضروات شارع السوق، مدينة الكويت، العاصمة للوالكويت.</item>
+        <item>مدينة برج فندق والخضروات شارع السوق، مدينة الكويت، العاصمة للوالكويت.</item>
+
+    </array>
+
+    <!--Profile-->
+    <string name="first_name">الاسم الاول</string>
+    <string name="sur_name">لقب</string>
+    <string name="address">عنوان</string>
+    <string name="contact_number">رقم الاتصال</string>
+    <string name="err_msg_name">من فضلك ادخل اسمك الكامل</string>
+    <string name="err_msg_mobile_characters">يجب أن يكون رقم المحمول لا يقل عن 10 حرفا.</string>
+    <string name="err_msg_sur_name">الرجاء إدخال اسم سور الخاص بك</string>
+    <string name="err_msg_mobile">الرجاء إدخال رقم هاتفك المحمول</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="hint_gender">جنس</string>
+    <string name="hint_female">إناثا</string>
+    <string name="hint_male">الذكر</string>
+    <string name="change_password_txt">تغيير كلمة السر</string>
+    <string name="driver_status">وضع سائق</string>
+    <string name="available">متاح</string>
+    <string name="busy">مشغول</string>
+    <string name="offline">غير متصل على الانترنت</string>
+    <!---->
+
+
+    <!--Change password-->
+    <string name="old_password_txt">كلمة المرور القديمة</string>
+    <string name="old_password_error_txt">أدخل كلمة المرور القديمة</string>
+    <string name="new_password_txt">كلمة السر الجديدة</string>
+    <string name="new_password_error_txt">أدخل كلمة المرور الجديدة</string>
+    <string name="confirm_password_txt">تأكيد كلمة المرور</string>
+    <string name="confirm_password_error_txt">أدخل كلمة المرور تأكيد</string>
+
+    <string name="old_password_miss_match_txt">كلمة المرور خاطئة. الرجاء التأكد من إدخال كلمة المرور بشكل صحيح</string>
+    <string name="confirm_password_miss_match_txt">تأكيد كلمة المرور يغيب مطابقة</string>
+
+
+    <!--Reports-->
+    <string name="nav_reports">تقارير</string>
+    <string name="pick_date">اختيار التاريخ</string>
+    <string name="piechart_title1">توصيل</string>
+    <string name="piechart_title2">التقط</string>
+    <string name="piechart_title3">تعيين</string>
+    <string name="no_recor_available_txt">لا السجلات المتاحة.</string>
+    <!---->
+
+
+    <!--fab-->
+    <string name="language_mode">عربى</string>
+    <string name="fab_report">أبلغ عن</string>
+    <string name="language_change">English</string>
+    <string name="support">الدعم</string>
+    <string name="log_out">الخروج</string>
+    <string name="fab_notifications">إخطارات</string>
+    <!---->
+
+    <!--Order_detail-->
+    <string name="email_invoice">البريد الإلكتروني الفاتورة</string>
+    <string name="status">الحالة</string>
+    <string name="call">مكالمة</string>
+    <string name="history">التاريخ</string>
+
+
+
+    <!--No internet connection-->
+    <string name="no_internet_conn_tit_txt">لا يوجد اتصال إنترنت</string>
+    <string name="no_internet_conn_msg_txt">لا يوجد اتصال الإنترنت في جهازك. يرجى تمكينه.</string>
+    <string name="no_internet_conn_ok_btn_txt">حسنا</string>
+    <!---->
+
+    <!--API-->
+    <string name="Device_Token">device_token</string>
+    <string name="Device_id">device_id</string>
+    <string name="name">عبد الله</string>
+    <string name="number">9962828791</string>
+    <string name="driver_name">محمد هاشم</string>
+    <string name="time">10:00 ص  :</string>
+    <string name="bill_details">بيل تفاصيل</string>
+    <!--<string name="assigned">تعيين</string>-->
+    <!--<string name="picked">التقط</string>-->
+    <!--<string name="deliver">تم التوصيل</string>-->
+    <string name="total">مجموع</string>
+    <string name="Tax">ضريبة</string>
+    <string name="grandtotal">المبلغ الإجمالي</string>
+    <string name="Payment">دفع</string>
+    <string name="quan">كمية</string>
+    <string name="delivery_charge_txt">رسوم التوصيل</string>
+
+    <string name="delivery_txt">توصيل</string>
+
+    <!--  Signature View   -->
+
+    <string name="signaturehelptext">يرجى وضع التوقيع أدناه</string>
+
+
+    <!--Orders List-->
+    <string name="order_list_empty_view_txt">لا توجد أوامر.</string>
+    <string name="message">الرسالة</string>
+    <string name="exit_dialog">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="log_out_or_exit_txt">هل أنت متأكد أنك تريد إنهاء هذا التطبيق؟</string>
+
+    <string name="ordet_item_order_id_txt">رقم التعريف الخاص بالطلب :</string>
+    <string name="order_item_status_txt">الحالة :</string>
+
+    <!--Location aleart-->
+    <string name="loc_aleart_content_txt">يرجى تمكين موقعك لاستخدام هذا التطبيق.</string>
+    <string name="curr_loc_not_upd_msg_txt">موقعك الحالي لم يتم تحديث الانتظار دقائق.</string>
+
+
+    <!--Invoice Dialog-->
+    <string name="my_ord_det_invoice_txt">فاتورة</string>
+
+
+    <string name="no_internet">يرجى التأكد من الشبكة</string>
+
+
+
+
+    <string name="initiated_text">بدأت</string>
+    <string name="processed_text">معالجة</string>
+    <string name="packed_text">معباه</string>
+    <string name="dispatch_text">أرسل</string>
+    <!--<string name="assigned">Assigned</string>-->
+    <!--<string name="picked">Picked up</string>-->
+    <string name="delivered_text">تم التوصيل</string>
+
+
+
+    <!--Support-->
+    <string name="support_name_txt">اسم</string>
+    <string name="support_email_txt">البريد الإلكتروني</string>
+    <string name="support_phone_no_txt">رقم الهاتف</string>
+    <string name="support_address_txt">عنوان</string>
+
+
+    <!--Contitions & conditions-->
+    <string name="terms_conditions_tit_txt"> شروط&amp; الظروف </string>
+    <string name="privacy_policy">الإجمالية &amp; سياسات</string>
+    <string name="contracts_users">عقود للمستخدمين</string>
+
+
+
+    <!--sign_up-->
+    <string name="sign_up">سجل</string>
+    <string name="first_name_txt">الاسم الأول</string>
+    <string name="last_name_txt">الاسم الأخير</string>
+    <string name="hint_email">البريد الالكتروني</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_cnfrm_pswd">اعد كتابة كلمة المرور</string>
+    <string name="hint_mobile">رقم الهاتف</string>
+    <string name="hint_address">عنوان الاتصال</string>
+    <string name="hint_driving_licence">رخصة السيارة</string>
+    <string name="hint_driver_licence">رخصة السائق</string>
+    <string name="id_card">بطاقة التعريف الشخصية</string>
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt">أنا أوافق المصطلحات العربية &amp; الشروط الخصوصية &amp;السياسة والعقود للمستخدمين</string>-->
+    <string name="hint_already_have_an_account">لديك حساب؟</string>
+    <string name="hint_login">سجّل دخولك</string>
+    <string name="sign_up_cancel">إلغاء</string>
+    <string name="sign_up_btn">سجل</string>
+    <string name="pick_image_intent_text">حدد صورتك:</string>
+    <string name="pick_loc_select_city_txt">اختر المدينة</string>
+    <string name="pick_country_txt">اختر الدولة</string>
+    <string name="err_msg_select_any_loc_txt">لم يتم العثور على مدينة. يرجى تغيير البلد.</string>
+    <string name="err_msg_select_any_loc">حدد أي مدينة.</string>
+    <string name="err_msg_city_not_found">لم يتم العثور على البلد.</string>
+    <string name="err_msg_no_loc_found">لم يتم العثور على المدينة.</string>
+    <string name="err_msg_select_any_city">حدد أي بلد</string>
+    <string name="signup_success">شكرا لتسجيلك معنا, سيقوم الموظف بالتواصل معك في أقرب وقت ممكن</string>
+    <string name="email_existed">البريد الالكتروني مسجل مسبقا</string>
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt"> أنا اوافق على <![CDATA[<b><font color=#f78a2a> عقد السائق</b>]]>  الخاص بتطبيق عربتي </string>-->
+
+    <string name="hint_i_agree_the_terms_and_conditions_txt">أوافق أودفوديدريفر</string>
+    <string name="terms_conditions">عقد السائق الخاص بتطبيق عربتي</string>
+    <string name="yes">حسنا</string>
+    <!--error message-->
+    <string name="error_msg_name">الرجاء استخدام الأحرف فقط</string>‎
+    <string name="err_msg_first_name">أدخل الاسم الأول</string>
+    <string name="err_msg_last_name">أدخل الاسم الأخير</string>
+    <string name="err_msg_email">أدخل معرف بريد صالح</string>
+    <string name="err_signmsg_password">أدخل كلمة المرور</string>
+    <string name="err_signmsg_mobile">أدخل رقم الجوال</string>
+    <string name="err_msg_valid_mobile">أدخل رقم الجوال صالحا</string>
+    <string name="incorrect_pswd">كلمة المرور غير مطابقة</string>
+    <string name="err_msg_checkbox">يرجى الموافقة على الشروط والأحكام.</string>
+    <string name="err_msg_location">الرجاء تحديد الموقع</string>
+    <string name="attachment">يجب أن تكون جميع المرفقات مطلوبة.</string>
+    <string name="uploadprofilephoto">الرجاء تحميل صورة الملف الشخصي</string>
+
+    <string name="notifi_list_empty_err_msg_txt">لا توجد إشعارات</string>
+
+    <string name="accept">قبول</string>
+    <string name="decline">انخفاض</string>
+    <string name="reject">رفض</string>
+
+    <string name="accepted">قبلت</string>
+    <string name="declined">رفض</string>
+    <string name="rejected">مرفوض</string>
+
+
+    <string name="order_conf_dia_tit_txt">تم تعيين طلب جديد</string>
+    <string name="please_add_atta_txt">يجب أن يكون المرفق مطلوبا</string>
+    <string name="attachemnt_receipt_err_msg">لا يمكن قراءة المرفقات المرفقة</string>
+
+
+    <!--  Order Confirmation Dialog  -->
+
+    <string name="btn_accept">قبول</string>
+    <string name="btn_decline">انخفاض</string>
+
+
+    <string name="ord_det_pahone_no_err_msg">لم يتم العثور على رقم الهاتف</string>
+
+
+    <!--Slide Unlock Button-->
+    <string name="slidetounlock_label">إسحب لتفتح</string>
+    <string name="slidetounlock_label_default">إسحب لتفتح</string>
+
+
+    <string name="click_here"><u>انقر هنا</u></string>
+    <string name="ord_det_signature_txt">التوقيع</string>
+    <string name="ord_det_sig_add_btn_txt">إضافة</string>
+    <string name="ord_det_sig_update_btn_txt">تحديث</string>
+    <string name="ord_det_images_btn_txt">صور</string>
+
+
+
+</resources>

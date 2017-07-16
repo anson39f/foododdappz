@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "454407070907",
+    "firebase_url": "https://fir-oddfoody.firebaseio.com",
+    "project_id": "firebase-oddfoody",
+    "storage_bucket": "firebase-oddfoody.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454407070907:android:21e4928c5f2c9003",
+        "android_client_info": {
+          "package_name": "com.app.OddappzFood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454407070907-osj2gqmp1qdupr8u32t1f8gjn0qp2or0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454407070907-1ak261a28ms3876ds7fl9mv3pf72ru6l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454407070907-ugn74jt7mm64sljr94vdiaa4oskbh3qo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.OddappzFood",
+            "certificate_hash": "150a914831447719928d3fdd7fa1c1225dfff0fc"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmu30CcPa4hudSWimAOPXVrf5DfxIQZgY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454407070907-osj2gqmp1qdupr8u32t1f8gjn0qp2or0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454407070907:android:aa0fd0577b37697f",
+        "android_client_info": {
+          "package_name": "com.app.OddfoodyDriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454407070907-nvclta428ve7hgdbk0rdpa1682khdokg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.OddfoodyDriver",
+            "certificate_hash": "150a914831447719928d3fdd7fa1c1225dfff0fc"
+          }
+        },
+        {
+          "client_id": "454407070907-osj2gqmp1qdupr8u32t1f8gjn0qp2or0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454407070907-1ak261a28ms3876ds7fl9mv3pf72ru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmu30CcPa4hudSWimAOPXVrf5DfxIQZgY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454407070907-osj2gqmp1qdupr8u32t1f8gjn0qp2or0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

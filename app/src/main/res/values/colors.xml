@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background_color">#1201</color>
+
+    <!--<color name="colorPrimary">#f78a2a</color>-->
+    <!--<color name="colorPrimaryDark">#f78a2a</color>-->
+    <!--<color name="colorAccent">#f78a2a</color>-->
+
+    <color name="colorPrimary">#dd0014</color>
+    <color name="colorPrimaryDark">#c60012</color>
+    <color name="colorAccent">#c60012</color>
+
+    <color name="slideViewAccept">#09ae69</color>
+
+    <color name="white_color">@android:color/white</color>
+    <color name="screen_bg_color">#fbfbfb</color>
+    <color name="dark_txt_color">#151515</color>
+    <color name="disable_txt_color">#999999</color>
+
+
+    <color name="pickup">#eaeaea</color>
+    <color name="delivery">#dd0014</color>
+    <color name="assigned">#b9b9b9</color>
+    <color name="fab_background">#e6000000</color>
+    <color name="bottom_color">#2d2a2b</color>
+
+    <color name="status_color">#141414</color>
+    <color name="status_bg">#33000000</color>
+    <color name="yellow_color">#ffcd34</color>
+
+    <color name="orange">#FF9900</color>
+    <color name="green_color">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="light_grey_color">#777777</color>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DilatingDotsProgressBar">
+        <attr name="android:radius" />
+        <attr name="android:color" />
+        <attr name="dd_numDots" format="integer" />
+        <attr name="dd_scaleMultiplier" format="float" />
+        <attr name="dd_animationDuration" format="integer" />
+        <attr name="dd_horizontalSpacing" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableGridView">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="stretchMode">
+            <enum name="none" value="0"/>
+            <enum name="spacingWidth" value="1" />
+            <enum name="columnWidth" value="2" />
+            <enum name="spacingWidthUniform" value="3" />
+        </attr>
+        <attr name="columnWidth" format="dimension" />
+        <attr name="numColumns" format="integer" min="0">
+            <enum name="auto_fit" value="-1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_headerLayout" format="reference"/>
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="InkView">
+        <!-- Feature flags for InkView. Defaults to "interpolation|responsiveWeight" -->
+        <attr name="inkFlags">
+            <!-- No features turned on -->
+            <flag name="none" value="0"/>
+            <!-- Interpolate paths as cubic-bezier curves -->
+            <flag name="interpolation" value="1"/>
+            <!-- Stroke width changes in response to velocity -->
+            <flag name="responsiveWeight" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

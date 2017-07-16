@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/app_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_bg_color"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/order_app_bar"
+            layout="@layout/app_bar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/order_list_swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background_color"
+                android:scrollbars="none"/>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:id="@+id/order_list_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/order_list_empty_view_txt"
+                android:textColor="@color/disable_txt_color"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fab_background"
+        android:visibility="visible">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            fab:fab_addButtonColorNormal="@color/colorPrimary"
+            fab:fab_addButtonColorPressed="@color/colorPrimary"
+            fab:fab_addButtonPlusIconColor="@color/white_color"
+            fab:fab_addButtonSize="mini"
+            fab:fab_addButtonStrokeVisible="false"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="right">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/notification"
+                fab:fab_size="mini"
+                fab:fab_title="@string/fab_notifications" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_profile_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/profile"
+                fab:fab_size="mini"
+                fab:fab_title="@string/nav_profile" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_report_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/report"
+                fab:fab_plusIconColor="@color/colorPrimary"
+                fab:fab_size="mini"
+                fab:fab_title="@string/fab_report" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_support_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/support"
+                fab:fab_size="mini"
+                fab:fab_title="@string/support" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_lang_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/arabiclang"
+                fab:fab_size="mini"
+                fab:fab_title="@string/language_change" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_log_out_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_icon="@drawable/log_out_ic"
+                fab:fab_size="mini"
+                fab:fab_title="@string/log_out" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </FrameLayout>
+
+</FrameLayout>
+

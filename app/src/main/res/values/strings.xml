@@ -1,0 +1,373 @@
+<resources>
+
+    <string name="app_name">Oddfoody Driver</string>
+
+    <!--Testing Credential-->
+    <!--<string name="user_email_id">hariprasath.s@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">selvam@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">senthilkumar.a@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">seetha.s@nextbrainitech.com</string>-->
+
+    <!--<string name="user_password">123456</string>-->
+
+    <!--Dialog-->
+    <string name="cancel_btn_txt">Cancel</string>
+    <string name="ok_btn_txt">OK</string>
+    <string name="log_out_btn_txt">Logout</string>
+    <string name="exit_btn_txt">Exit</string>
+    <!---->
+
+    <!--select language activity-->
+    <string name="select_language">Select language</string>
+    <string name="btn_arabic">Arabic</string>
+    <string name="btn_english">English</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_content">You are one step away from enjoying the best shopping experience ever</string>
+    <!---->
+
+    <!--splash screen-->
+    <string name="screen_over_lay_title">Screen overlay detected</string>
+    <string name="screen_over_lay_permission_msg_txt">Please enable ACTION MANAGE OVERLAY PERMISSION to use this application.</string>
+    <string name="screen_over_lay_cancel_btn_txt">CANCEL</string>
+    <string name="screen_over_lay_ok_btn_txt">OK</string>
+    <!---->
+
+    <!--Signin-->
+    <string name="Sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="error_msg_Email">invalid email address or password</string>
+    <string name="err_msg_password">Password must contain at least six letters and At least a large letter.</string>
+    <string name="login_type">2</string>
+    <string name="hint_dont_have_an_account">Don\'t have an account?</string>
+    <string name="hint_create_one">Create one!</string>
+
+
+    <!---->
+
+    <!--Signup-->
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name_txt">First Name</string>
+    <string name="last_name_txt">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_cnfrm_pswd">Confirm Password</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_address">Contact Address</string>
+    <string name="hint_driving_licence">Car license</string>
+    <string name="hint_driver_licence">Driver Licence</string>
+    <string name="id_card">Identification Card</string>
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt">I agree OddfoodyDriver\'s Terms &amp; Conditions,Privacy &amp; policy and Contracts for users </string>-->
+    <string name="hint_already_have_an_account">Already have an account?</string>
+    <string name="hint_login">Login!</string>
+    <string name="sign_up_cancel">Cancel</string>
+    <string name="sign_up_btn">Sign up</string>
+    <string name="pick_image_intent_text">Select your image:</string>
+    <string name="pick_loc_select_city_txt">Select city</string>
+    <string name="pick_country_txt">Select Country</string>
+    <string name="err_msg_select_any_loc_txt">No city found. Please change the Country.</string>
+    <string name="err_msg_select_any_loc">Select any city.</string>
+    <string name="err_msg_city_not_found">Country not found.</string>
+    <string name="err_msg_no_loc_found">City not found.</string>
+    <string name="err_msg_select_any_city">Select any country</string>
+    <string name="signup_success">Thank you for registering with us, our staff will contact you as soon as possible</string>
+    <string name="email_existed">Email already registered</string>
+    <!--<string name="country_code">+966</string>-->
+    <string name="yes">OK</string>
+    <string name="hint_i_agree_the_terms_and_conditions_txt">I agree OddfoodyDriver’s</string>
+    <string name="terms_conditions">contracts for drivers</string>
+
+    <!--&lt;!&ndash;error message&ndash;&gt;-->
+    <!--<string name="err_msg_first_name">Enter the first name</string>-->
+    <!--<string name="err_msg_last_name">Enter the last name</string>-->
+    <!--<string name="err_msg_email">Enter valid mail ID</string>-->
+    <!--<string name="err_signmsg_password">Enter the password</string>-->
+    <!--<string name="err_signmsg_mobile">Enter the mobile number</string>-->
+    <!--<string name="err_msg_valid_mobile">Enter the valid mobile number</string>-->
+    <!--<string name="incorrect_pswd">Password mismatch.</string>-->
+    <!--<string name="err_msg_checkbox">Please agree the terms and conditions.</string>-->
+    <!--<string name="err_msg_location">Please select location</string>-->
+
+    <!--&lt;!&ndash;Contitions & conditions&ndash;&gt;-->
+    <!--<string name="terms_conditions_tit_txt">Terms &amp; Conditions</string>-->
+    <!--<string name="privacy_policy">Privacy &amp; policy</string>-->
+    <!--<string name="contracts_users">Contracts for users</string>-->
+
+
+    <!--ForgotPassword-->
+    <string name="forgot_pass_title">Forgot Password</string>
+    <string name="submit_button">Submit</string>
+    <!---->
+
+    <!--Orders-->
+    <string name="nav_orders">Orders</string>
+    <string name="order_date">Wed, Aug 30, 10:10 AM</string>
+    <string name="order_id">Order ID : 124856</string>
+    <string name="order_amount">320</string>
+    <string name="pickup">City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</string>
+    <string name="destination">City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</string>
+    <!---->
+
+    <array name="order_date_array">
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+    </array>
+
+    <array name="order_id_array">
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+    </array>
+
+    <array name="order_amount_array">
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+    </array>
+
+    <array name="order_item_array">
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+    </array>
+
+    <array name="order_quan_array">
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </array>
+
+    <array name="pick_up_array">
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+    </array>
+
+    <array name="destination_array">
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+    </array>
+
+    <!---->
+
+    <!--Profile-->
+    <string name="first_name">First Name</string>
+    <string name="sur_name">Surname</string>
+    <string name="contact_number">Contact number</string>
+    <string name="address">Address</string>
+    <string name="err_msg_name">Please enter your full name</string>
+    <string name="err_msg_sur_name">Please enter your sur name</string>
+    <string name="err_msg_mobile">Please enter your mobile number</string>
+    <string name="err_msg_mobile_characters">Mobile number should be at least 10 characters long.</string>
+    <string name="err_msg_address">Please enter your address</string>
+    <string name="nav_profile">Profile</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_female">Female</string>
+    <string name="hint_male">Male</string>
+    <string name="change_password_txt">Change password</string>
+    <string name="driver_status">Driver status</string>
+    <string name="available">Available</string>
+    <string name="busy">Busy</string>
+    <string name="offline">Offline</string>
+
+
+    <!--Change password-->
+    <string name="old_password_txt">Old password</string>
+    <string name="old_password_error_txt">Enter the old password</string>
+    <string name="new_password_txt">New password</string>
+    <string name="new_password_error_txt">Enter the new password</string>
+    <string name="confirm_password_txt">Confirm password</string>
+    <string name="confirm_password_error_txt">Enter the confirm password</string>
+
+    <string name="old_password_miss_match_txt">Wrong password. Please make sure you entered your password correctly</string>
+    <string name="confirm_password_miss_match_txt">Confirm password mismatch</string>
+    <!---->
+
+    <!--Reports-->
+    <string name="nav_reports">Reports</string>
+    <string name="pick_date">Pick a date</string>
+    <string name="piechart_title1">Delivery</string>
+    <string name="piechart_title2">Picked up</string>
+    <string name="piechart_title3">Assigned</string>
+    <string name="no_recor_available_txt">No records available.</string>
+    <!---->
+
+
+    <!--fab-->
+    <string name="language_mode">Arabic</string>
+    <string name="language_change">English</string>
+    <string name="fab_report">Report</string>
+    <string name="support">Support</string>
+    <string name="log_out">Logout</string>
+    <string name="fab_notifications">Notifications</string>
+    <!---->
+
+    <!--Order_detail-->
+    <string name="email_invoice">Email Invoice</string>
+    <string name="status">Status</string>
+    <string name="call">Call</string>
+    <string name="history">History</string>
+
+
+
+
+    <!--No internet connection-->
+    <string name="no_internet_conn_tit_txt">No internet connection</string>
+    <string name="no_internet_conn_msg_txt">No internet connection in your device. Please enable it.</string>
+    <string name="no_internet_conn_ok_btn_txt">OK</string>
+    <!---->
+
+
+
+    <!--API-->
+    <string name="Device_Token">device_token</string>
+    <string name="Device_id">device_id</string>
+    <string name="name">Abdullah</string>
+    <string name="number">9962828791</string>
+    <string name="driver_name">Mohammed Hasim</string>
+    <string name="time">10:00 AM  :</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="initiated_text">Initiated</string>
+    <string name="processed_text">Processed</string>
+    <string name="packed_text">Packed</string>
+    <string name="dispatch_text">Dispatched</string>
+    <!--<string name="assigned">Assigned</string>-->
+    <!--<string name="picked">Picked up</string>-->
+    <string name="delivered_text">Delivered</string>
+    <string name="total">Total</string>
+    <string name="Tax">Tax</string>
+    <string name="grandtotal">Grand total</string>
+    <string name="Payment">Payment</string>
+    <string name="quan">Quantity</string>
+    <string name="English">English</string>
+    <string name="delivery_charge_txt">Delivery charge</string>
+
+    <string name="delivery_txt">Delivery</string>
+
+
+    <!--Orders List-->
+    <string name="order_list_empty_view_txt">No orders found.</string>
+    <string name="message">Message</string>
+    <string name="exit_dialog">Are you sure you want to logout?</string>
+    <string name="log_out_or_exit_txt">Are you sure you want to exit this application?</string>
+    <string name="ordet_item_order_id_txt">Order ID :</string>
+    <string name="order_item_status_txt">Status :</string>
+
+
+    <!--  Signature View   -->
+
+    <string name="signaturehelptext">Please put signature below</string>
+
+    <!--Location aleart-->
+    <string name="loc_aleart_content_txt">Please enable your location to use this application.</string>
+    <string name="curr_loc_not_upd_msg_txt">Your current location not updated wait a minutes.</string>
+
+
+    <!--Invoice Dialog-->
+    <string name="my_ord_det_invoice_txt">Invoice</string>
+
+
+    <string name="no_internet">No internet connection.</string>
+
+
+    <!--Support-->
+    <string name="support_name_txt">Name</string>
+    <string name="support_email_txt">Email</string>
+    <string name="support_phone_no_txt">Phone no</string>
+    <string name="support_address_txt">Address</string>
+
+    <!--&lt;!&ndash;Signup&ndash;&gt;-->
+    <!--<string name="sign_up">Sign Up</string>-->
+    <!--<string name="first_name_txt">First Name</string>-->
+    <!--<string name="last_name_txt">Last Name</string>-->
+    <!--<string name="hint_email">Email</string>-->
+    <!--<string name="hint_password">Password</string>-->
+    <!--<string name="hint_cnfrm_pswd">Confirm Password</string>-->
+    <!--<string name="hint_mobile">Mobile Number</string>-->
+    <!--<string name="hint_address">Contact Address</string>-->
+    <!--<string name="hint_driving_licence">Driving Licence</string>-->
+    <!--<string name="hint_driver_licence">Driver Licence</string>-->
+    <!--<string name="id_card">Identification Card</string>-->
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt">I agree OddfoodyDriver\'s <![CDATA[<font color="#18c47c"><b>Terms &amp; Conditions </b></font>]]>, <![CDATA[<font color="#18c47c"><b>Privacy &amp; policy</b></font>]]> and <![CDATA[<font color="#18c47c"><b>Contracts for users </b></font>]]></string>-->
+    <!--<string name="hint_already_have_an_account">Already have an account?</string>-->
+    <!--<string name="hint_login">Login!</string>-->
+    <!--<string name="sign_up_cancel">Cancel</string>-->
+    <!--<string name="sign_up_btn">Sign up</string>-->
+    <!--<string name="pick_image_intent_text">Select your image:</string>-->
+    <!--<string name="pick_loc_select_city_txt">Select city</string>-->
+    <!--<string name="pick_country_txt">Select Country</string>-->
+    <!--<string name="err_msg_select_any_loc_txt">No city found. Please change the Country.</string>-->
+    <!--<string name="err_msg_select_any_loc">Select any city.</string>-->
+    <!--<string name="err_msg_city_not_found">Country not found.</string>-->
+    <!--<string name="err_msg_no_loc_found">City not found.</string>-->
+    <!--<string name="err_msg_select_any_city">Select any country</string>-->
+
+    <!--error message-->
+    <string name="error_msg_name">Please use letters only</string>
+    <string name="err_msg_first_name">Enter the first name</string>
+    <string name="err_msg_last_name">Enter the last name</string>
+    <string name="err_msg_email">Enter valid mail ID</string>
+    <string name="err_signmsg_password">Enter the password</string>
+    <string name="err_signmsg_mobile">Enter the mobile number</string>
+    <string name="err_msg_valid_mobile">Enter the valid mobile number</string>
+    <string name="incorrect_pswd">Password does not match</string>
+    <string name="err_msg_checkbox">Please agree the terms and conditions.</string>
+    <string name="err_msg_location">Please select location</string>
+    <string name="attachment">All attachments should be required</string>
+    <string name="uploadprofilephoto">Please Upload Profile Photo</string>
+
+    <!--Contitions & conditions-->
+    <string name="terms_conditions_tit_txt">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy &amp; policy</string>
+    <string name="contracts_users">Contracts for users</string>
+
+
+    <string name="notifi_list_empty_err_msg_txt">There is no notifications</string>
+
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="reject">Reject</string>
+
+    <string name="accepted">Accepted</string>
+    <string name="declined">Declined</string>
+    <string name="rejected">Rejected</string>
+
+
+    <string name="order_conf_dia_tit_txt">A new order has been assigned</string>
+    <string name="please_add_atta_txt">Attachment should be required</string>
+    <string name="attachemnt_receipt_err_msg">Can not read attached attachemnt</string>
+
+
+    <!--  Order Confirmation Dialog  -->
+
+    <string name="btn_accept">Accept</string>
+    <string name="btn_decline">Decline</string>
+
+
+    <string name="ord_det_pahone_no_err_msg">Phone number not found</string>
+
+
+    <!--Slide Unlock Button-->
+    <string name="slidetounlock_label">slide to unlock</string>
+    <string name="slidetounlock_label_default">slide to unlock</string>
+
+
+
+    <string name="click_here"><u>Click Here</u></string>
+    <string name="ord_det_signature_txt">Signature</string>
+    <string name="ord_det_sig_add_btn_txt">Add</string>
+    <string name="ord_det_sig_update_btn_txt">Update</string>
+    <string name="ord_det_images_btn_txt">Images</string>
+
+
+</resources>

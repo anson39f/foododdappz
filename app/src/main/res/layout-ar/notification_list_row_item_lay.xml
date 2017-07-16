@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin">
+
+        <com.app.OddfoodyDriver.DriverCustomView.CircleImageView
+            android:id="@+id/notif_user_image"
+            android:layout_width="@dimen/order_img_size"
+            android:layout_height="@dimen/order_img_size"
+            app:civ_border_color="@color/app_background_color"
+            app:civ_border_width="@dimen/order_line_height"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notf_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:textColor="@android:color/secondary_text_light" />
+
+                <TextView
+                    android:id="@+id/notf_amt_txt_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--android:layout_marginBottom="@dimen/small_margin"-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notf_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notf_title"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notifi_states_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_margin"
+        android:gravity="end"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/rejected_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/accepted_btn"
+            android:text="@string/rejected"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/accepted_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:background="@drawable/accepted_btn"
+            android:text="@string/accepted"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/declined_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:background="@drawable/declined_btn"
+            android:text="@string/declined"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notif_slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin">
+
+        <ng.max.slideview.SlideView
+            android:id="@+id/accept_slide_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            app:animateSlideText="true"
+            app:buttonBackgroundColor="@color/green_color"
+            app:buttonImage="@drawable/ic_chevron_double_right_white_24dp_ar"
+            app:reverseSlide="false"
+            app:slideBackgroundColor="@android:color/white"
+            app:slideText="@string/accept"
+            app:slideTextColor="@color/green_color"
+            app:strokeColor="@color/green_color" />
+
+        <ng.max.slideview.SlideView
+            android:id="@+id/decline_slide_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            app:animateSlideText="true"
+            app:buttonBackgroundColor="@android:color/holo_red_dark"
+            app:buttonImage="@drawable/ic_chevron_double_right_white_24dp_ar"
+            app:reverseSlide="false"
+            app:slideBackgroundColor="@android:color/white"
+            app:slideText="@string/decline"
+            app:slideTextColor="@android:color/holo_red_dark"
+            app:strokeColor="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>
