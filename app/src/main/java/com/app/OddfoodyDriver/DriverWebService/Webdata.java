@@ -23,8 +23,8 @@ public class Webdata {
 
     //    public static String BaseUrl = "http://192.168.0.143:1004/api/";
 
-//    private static String BaseUrl = "http://food.oddappz.com/api/";
-        private static String BaseUrl = "http://107.170.233.165/api/";
+    private static String BaseUrl = "http://food.oddappz.com/api/";
+//        private static String BaseUrl = "http://107.170.233.165/api/";
 
     //    private static String BaseUrl = "http://192.168.0.133:2039/api/";
 

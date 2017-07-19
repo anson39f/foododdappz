@@ -203,17 +203,17 @@ public class OrderdetailActivity extends LocalizationActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_detail);
 
-//        Log.e("Order_ID", "-" + getIntent().hasExtra("Order_ID"));
+        //        Log.e("Order_ID", "-" + getIntent().hasExtra("Order_ID"));
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-//            Order_date = extras.getString("Order_Date");
+            //            Order_date = extras.getString("Order_Date");
             Order_id = extras.getString("Order_ID");
         }
 
 
         toolbar = (Toolbar) findViewById(R.id.order_detail_toolbar_id);
-//        toolbar.setTitle("" + Order_date);
+        //        toolbar.setTitle("" + Order_date);
         toolbar.setSubtitle(getResources().getString(R.string.ordet_item_order_id_txt) + " " + Order_id);
         setSupportActionBar(toolbar);
 
@@ -248,12 +248,12 @@ public class OrderdetailActivity extends LocalizationActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        if (LanguageSetting.getLanguage().equals("en")) {
+        if (LanguageSetting.getLanguage().equals("en") || LanguageSetting.getLanguage().equals
+                ("zh")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_en);
-        } else {
+        } else if (LanguageSetting.getLanguage().equals("ar")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_ar);
         }
-
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -309,7 +309,7 @@ public class OrderdetailActivity extends LocalizationActivity {
         ord_det_delive_slide_btn_lay = (LinearLayout) findViewById(R.id.ord_det_delive_slide_btn_lay);
 
 
-//        order_det_invoice_btn = (Button) findViewById(R.id.order_det_invoice_btn);
+        //        order_det_invoice_btn = (Button) findViewById(R.id.order_det_invoice_btn);
         order_det_status_btn = (Button) findViewById(R.id.order_det_status_btn);
         order_det_call_btn = (Button) findViewById(R.id.order_det_call_btn);
 
@@ -483,7 +483,7 @@ public class OrderdetailActivity extends LocalizationActivity {
         order_det_deliv_request_txt_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                DeliverySucessRequestMethod();
+                //                DeliverySucessRequestMethod();
                 Intent signature_intent = new Intent(OrderdetailActivity.this, SignatureActivity.class);
                 signature_intent.putExtra("order_id", "" + Order_id);
                 startActivity(signature_intent);
@@ -522,7 +522,7 @@ public class OrderdetailActivity extends LocalizationActivity {
                         if (response.body().getResponse().getHttpCode() == 200) {
 
                             toolbar.setTitle("" + response.body().getResponse().getOrderDetaList().get(0).getCreatedDate());
-//                            toolbar.setSubtitle("" + loginPrefManager.getStringValue("order_id"));
+                            //                            toolbar.setSubtitle("" + loginPrefManager.getStringValue("order_id"));
 
                             Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getUserImage()).centerCrop().error(R.color.app_background_color).into(ord_det_customer_img_view);
                             String user_name = "" + response.body().getResponse().getOrderDetaList().get(0).getUserFirstName() + " " + response.body().getResponse().getOrderDetaList().get(0).getUserLastName();
@@ -543,7 +543,7 @@ public class OrderdetailActivity extends LocalizationActivity {
 
                             // Vender and outlet name and image values updated.
                             Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).bitmapTransform(new CenterCrop(OrderdetailActivity.this), new RoundedCornersTransformation(OrderdetailActivity.this, 5, 0)).error(R.color.app_background_color).into(ord_det_featured_image_view);
-//                            Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).centerCrop().error(R.color.app_background_color).into(ord_det_featured_image_view);
+                            //                            Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).centerCrop().error(R.color.app_background_color).into(ord_det_featured_image_view);
                             order_det_venter_name_txt_view.setText("" + response.body().getResponse().getOrderDetaList().get(0).getVendor_name());
                             order_det_outlet_name_txt_view.setText("" + response.body().getResponse().getOrderDetaList().get(0).getOutlet_name());
 
@@ -568,28 +568,28 @@ public class OrderdetailActivity extends LocalizationActivity {
                              /*Vender and outlet name and image values updated.*/
 
                             Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).bitmapTransform(new CenterCrop(OrderdetailActivity.this), new RoundedCornersTransformation(OrderdetailActivity.this, 5, 0)).error(R.color.app_background_color).into(ord_det_featured_image_view);
-//                            Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).centerCrop().error(R.color.app_background_color).into(ord_det_featured_image_view);
+                            //                            Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getFeaturedImage()).centerCrop().error(R.color.app_background_color).into(ord_det_featured_image_view);
                             order_det_venter_name_txt_view.setText("" + response.body().getResponse().getOrderDetaList().get(0).getVendor_name());
                             order_det_outlet_name_txt_view.setText("" + response.body().getResponse().getOrderDetaList().get(0).getOutlet_name());
 
 
-//                            order_det_total_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + response.body().getResponse().getOrderDetaList().get(0).getTotalAmount()));
+                            //                            order_det_total_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + response.body().getResponse().getOrderDetaList().get(0).getTotalAmount()));
 
-//                            order_det_total_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + price));
+                            //                            order_det_total_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + price));
                             ord_det_delivery_charge_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getDeliveryCharge()));
                             ord_det_service_tax_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()));
 
 
-//                            int grand_total = ((Math.round((price)) +  Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getDeliveryCharge())) +
-//                                    Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()))));
-//                            int grand_total = ((Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getTotalAmount())) +
-//                                    Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()))));
+                            //                            int grand_total = ((Math.round((price)) +  Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getDeliveryCharge())) +
+                            //                                    Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()))));
+                            //                            int grand_total = ((Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getTotalAmount())) +
+                            //                                    Math.round(Float.parseFloat("" + response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()))));
 
-//                                                       String grand_total = "" + (Integer.parseInt(response.body().getResponse().getOrderDetaList().get(0).getTotalAmount()) + Integer.parseInt(response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()));
-//                            order_deta_grand_total_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + grand_total));
+                            //                                                       String grand_total = "" + (Integer.parseInt(response.body().getResponse().getOrderDetaList().get(0).getTotalAmount()) + Integer.parseInt(response.body().getResponse().getOrderDetaList().get(0).getOrders().get(0).getServiceTax()));
+                            //                            order_deta_grand_total_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + grand_total));
 
 
-//                            order_det_payment_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + grand_total));
+                            //                            order_det_payment_amt_txt_view.setText("" + loginPrefManager.getFormatCurrencyValue("" + grand_total));
 
 
                             if (response.body().getResponse().getOrderDetaList().get(0).getOrderStatus() == 19) {
@@ -743,13 +743,10 @@ public class OrderdetailActivity extends LocalizationActivity {
                             }
 
 
-
-//                            response.body().getResponse().getOrderDetaList().get(0).setDigital_signature("");  // Testing ---------------
-
+                            //                            response.body().getResponse().getOrderDetaList().get(0).setDigital_signature("");  // Testing ---------------
 
 
                             Order_signature_image = response.body().getResponse().getOrderDetaList().get(0).getDigital_signature();
-
 
 
                             if (response.body().getResponse().getOrderDetaList().get(0).getOrderStatus() == 12) {
@@ -758,7 +755,7 @@ public class OrderdetailActivity extends LocalizationActivity {
                                     ord_det_sig_add_txt_view.setText("" + getString(R.string.ord_det_sig_add_btn_txt));
                                     ord_det_sig_layout.setVisibility(View.VISIBLE);
                                 } else {
-//                                    ord_det_sig_layout.setVisibility(View.GONE);
+                                    //                                    ord_det_sig_layout.setVisibility(View.GONE);
                                     ord_det_sig_add_txt_view.setVisibility(View.GONE);
                                     order_signature_view.setVisibility(View.VISIBLE);
 
@@ -767,13 +764,13 @@ public class OrderdetailActivity extends LocalizationActivity {
                                     Glide.with(OrderdetailActivity.this).load("" + response.body().getResponse().getOrderDetaList().get(0).getDigital_signature()).listener(new RequestListener<String, GlideDrawable>() {
                                         @Override
                                         public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-//                                            progressBar.setVisibility(View.GONE);
+                                            //                                            progressBar.setVisibility(View.GONE);
                                             return false;
                                         }
 
                                         @Override
                                         public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-//                                            progressBar.setVisibility(View.GONE);
+                                            //                                            progressBar.setVisibility(View.GONE);
                                             return false;
                                         }
                                     }).into(order_signature_view);
@@ -908,25 +905,25 @@ public class OrderdetailActivity extends LocalizationActivity {
             RequestBody order_id = RequestBody.create(MediaType.parse("multipart/form-data"), "" + Order_id);
             RequestBody order_status = RequestBody.create(MediaType.parse("multipart/form-data"), "12");
 
-//            String uriStr = "android.resource://" + "com.app.yo9lekdriver" + "/" + R.drawable.signature_img;
-//            File imageFile = new File(uriStr);
-//
-//            Log.e("imageFile", "" + imageFile.getAbsolutePath());
+            //            String uriStr = "android.resource://" + "com.app.yo9lekdriver" + "/" + R.drawable.signature_img;
+            //            File imageFile = new File(uriStr);
+            //
+            //            Log.e("imageFile", "" + imageFile.getAbsolutePath());
 
-//            Uri path = Uri.parse("android.resource://com.app.yo9lekdriver/signature_img");
-//            File imageFiletype_two = new File(path);
+            //            Uri path = Uri.parse("android.resource://com.app.yo9lekdriver/signature_img");
+            //            File imageFiletype_two = new File(path);
 
-//            if (!imageFile.exists() && !imageFile.canRead()) {
-//                progressBarDialog.dismiss();
-//                return;
-//            }
+            //            if (!imageFile.exists() && !imageFile.canRead()) {
+            //                progressBarDialog.dismiss();
+            //                return;
+            //            }
 
-//            Log.e("imageFile", "" + imageFile.getAbsolutePath());
-//
-//            // create RequestBody instance from file
-//            RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), imageFile.getAbsoluteFile());
-//            // MultipartBody.Part is used to send also the actual file name
-//            final MultipartBody.Part ProfImgFile = MultipartBody.Part.createFormData("digital_signature", imageFile.getName(), requestFile);
+            //            Log.e("imageFile", "" + imageFile.getAbsolutePath());
+            //
+            //            // create RequestBody instance from file
+            //            RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), imageFile.getAbsoluteFile());
+            //            // MultipartBody.Part is used to send also the actual file name
+            //            final MultipartBody.Part ProfImgFile = MultipartBody.Part.createFormData("digital_signature", imageFile.getName(), requestFile);
 
 
             APIService order_deliverd_request = Webdata.getRetrofit().create(APIService.class);
@@ -1004,14 +1001,14 @@ public class OrderdetailActivity extends LocalizationActivity {
 
     private void SetMarkerLocation(LatLng start, LatLng end) {
 
-//        // Already two locations
-//        if (markerPoints.size() > 1) {
-//            markerPoints.clear();
-//            map.clear();
-//        }
-//
-//        // Adding new item to the ArrayList
-//        markerPoints.add(point);
+        //        // Already two locations
+        //        if (markerPoints.size() > 1) {
+        //            markerPoints.clear();
+        //            map.clear();
+        //        }
+        //
+        //        // Adding new item to the ArrayList
+        //        markerPoints.add(point);
 
         // Creating MarkerOptions
         MarkerOptions options = new MarkerOptions();
@@ -1113,7 +1110,7 @@ public class OrderdetailActivity extends LocalizationActivity {
             br.close();
 
         } catch (Exception e) {
-//            Log.d("Exception while downloading url", e.toString());
+            //            Log.d("Exception while downloading url", e.toString());
         } finally {
             iStream.close();
             urlConnection.disconnect();
@@ -1244,7 +1241,8 @@ public class OrderdetailActivity extends LocalizationActivity {
                 //Cancel handling, you might wanna remove taken photo if it was canceled
                 if (source == EasyImage.ImageSource.CAMERA) {
                     File photoFile = EasyImage.lastlyTakenButCanceledPhoto(OrderdetailActivity.this);
-                    if (photoFile != null) photoFile.delete();
+                    if (photoFile != null)
+                        photoFile.delete();
                 }
             }
         });
@@ -1254,8 +1252,8 @@ public class OrderdetailActivity extends LocalizationActivity {
     private void onPhotosDrivingReturned(List<File> imageFiles) {
 
         attachment_file = imageFiles.get(0).getAbsoluteFile();
-//        Log.e("Attachments path", "" + attachment_file.getAbsolutePath());
-//        tick_image.setVisibility(View.VISIBLE);
+        //        Log.e("Attachments path", "" + attachment_file.getAbsolutePath());
+        //        tick_image.setVisibility(View.VISIBLE);
 
         if (!attachment_file.exists() && !attachment_file.canRead()) {
             Toast.makeText(OrderdetailActivity.this, "Can not read attachement", Toast.LENGTH_SHORT).show();

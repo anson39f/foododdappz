@@ -13,7 +13,7 @@ import com.app.OddfoodyDriver.R;
 
 public class SelectLanguageActivity extends LocalizationActivity {
 
-    private RadioButton arabic_btn;
+    private RadioButton zh_btn;
     private RadioButton english_btn;
 
 
@@ -24,32 +24,35 @@ public class SelectLanguageActivity extends LocalizationActivity {
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
         setContentView(R.layout.activity_select_language);
 
-        arabic_btn = (RadioButton) findViewById(R.id.select_lang_arabic_btn);
+        zh_btn = (RadioButton) findViewById(R.id.select_lang_zh_btn);
         english_btn = (RadioButton) findViewById(R.id.select_lang_english_btn);
 
         FloatingActionButton next_img_btn = (FloatingActionButton) findViewById(R.id.fab);
 
         if (getLanguage().equals("en")) {
             english_btn.setChecked(true);
-        } else {
-            arabic_btn.setChecked(true);
+        } else if (getLanguage().equals("ar")) {
+            //            arabic_btn.setChecked(true);
+        } else if (getLanguage().equals("zh")) {
+            zh_btn.setChecked(true);
+
         }
 
         english_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!english_btn.isChecked()){
+                if (!english_btn.isChecked()) {
                     setLanguage("en");
                 }
             }
         });
 
 
-        arabic_btn.setOnClickListener(new View.OnClickListener() {
+        zh_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!arabic_btn.isChecked()){
-                    setLanguage("ar");
+                if (!zh_btn.isChecked()) {
+                    setLanguage("zh");
                 }
             }
         });
@@ -58,20 +61,28 @@ public class SelectLanguageActivity extends LocalizationActivity {
             @Override
             public void onClick(View v) {
 
-                if(english_btn.isChecked()){
+                if (english_btn.isChecked()) {
 
-                    if(!loginPrefManager.getStringValue("en_Id").equals("") || loginPrefManager.getStringValue("en_Id") != null){
+                    if (!loginPrefManager.getStringValue("en_Id").equals("") || loginPrefManager.getStringValue("en_Id") != null) {
                         loginPrefManager.setStringValue("Lang", "en");
-                        loginPrefManager.setStringValue("Lang_code",""+ loginPrefManager.getStringValue("en_Id") );
+                        loginPrefManager.setStringValue("Lang_code", "" + loginPrefManager.getStringValue("en_Id"));
                     }
 
-                }else{
+                } else if (zh_btn.isChecked()) {
 
-                    if(!loginPrefManager.getStringValue("ar_Id").equals("") || loginPrefManager.getStringValue("ar_Id") != null){
+                    if (!loginPrefManager.getStringValue("zh_Id").equals("") || loginPrefManager
+                            .getStringValue("zh_Id") != null) {
+                        loginPrefManager.setStringValue("Lang", "zh");
+                        loginPrefManager.setStringValue("Lang_code", "" + loginPrefManager
+                                .getStringValue("en_Id"));
+                    }
+
+                } else {
+
+                    if (!loginPrefManager.getStringValue("ar_Id").equals("") || loginPrefManager.getStringValue("ar_Id") != null) {
                         loginPrefManager.setStringValue("Lang", "ar");
-                        loginPrefManager.setStringValue("Lang_code", ""+loginPrefManager.getStringValue("ar_Id"));
+                        loginPrefManager.setStringValue("Lang_code", "" + loginPrefManager.getStringValue("ar_Id"));
                     }
-
                 }
 
                 Intent Sign_in = new Intent(SelectLanguageActivity.this, SignInActivity.class);

@@ -125,6 +125,8 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
 
         if (LanguageSetting.getLanguage().equals("en")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_en);
+        } else if (LanguageSetting.getLanguage().equals("zh")) {
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_en);
         } else {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_ar);
         }
@@ -133,7 +135,7 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
             @Override
             public void onClick(View v) {
                 ExitOrLogoutDialog();
-//                finish();
+                //                finish();
             }
         });
 
@@ -156,8 +158,8 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
         LocalBroadcastManager.getInstance(OrdersListsActivity.this).registerReceiver(broadcastReceiver, new IntentFilter("Loc_update_Rec"));
 
 
-//        File dstDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "OddfoodyDriverApp");
-//        Log.e("getAbsolutePath", "" + dstDir.getAbsolutePath());
+        //        File dstDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "OddfoodyDriverApp");
+        //        Log.e("getAbsolutePath", "" + dstDir.getAbsolutePath());
 
 
     }
@@ -213,7 +215,7 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
 
         order_recycler_view = (RecyclerView) findViewById(R.id.order_recycler_view);
 
-//        order_recycler_view.getScrollX();
+        //        order_recycler_view.getScrollX();
 
         order_recycler_view.setHasFixedSize(true);
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(OrdersListsActivity.this);
@@ -225,7 +227,7 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
         order_recycler_view.setAdapter(orderAdapter);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.order_list_swipeRefreshLayout);
-//        mSwipeRefreshLayout.setEnabled(false);
+        //        mSwipeRefreshLayout.setEnabled(false);
         mSwipeRefreshLayout.setColorSchemeColors(R.color.colorAccent, R.color.orange, R.color.green_color, R.color.blue);
         mSwipeRefreshLayout.setOnRefreshListener((new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -283,7 +285,7 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
 
                                 orderItems = (ArrayList<OrderList>) response.body().getResponse().getOrderList();
 
-//                            if(response.body().getResponse().getOrderList().size() != 0){}
+                                //                            if(response.body().getResponse().getOrderList().size() != 0){}
 
                                 orderAdapter.UpdateOrdersAdapterValues((ArrayList<OrderList>) response.body().getResponse().getOrderList(), response.body().getResponse().getOrderStatus());
 
@@ -293,10 +295,10 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
                                     OrderListEmptyView(response.body().getResponse().getOrderList().size());
                                 }
 
-//                            OrderListEmptyView(response.body().getResponse().getOrderList().size());
+                                //                            OrderListEmptyView(response.body().getResponse().getOrderList().size());
 
                             } else {
-//                            OrderListEmptyView(response.body().getResponse().getOrderList().size());
+                                //                            OrderListEmptyView(response.body().getResponse().getOrderList().size());
                             }
 
                         }
@@ -341,6 +343,12 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
 
 
     private void fabLanguageClickActionCall() {
+        if (LanguageSetting.getLanguage().equals("en")) {
+            fab_lang_but.setTitle(getString(R.string.btn_zh));
+        } else {
+            fab_lang_but.setTitle(getString(R.string.btn_english));
+        }
+
         fab_lang_but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -348,8 +356,8 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
                 fabMenu.collapse();
 
                 if (LanguageSetting.getLanguage().equals("en")) {
-                    loginPrefManager.setStringValue("Lang", "ar");
-                    loginPrefManager.setStringValue("Lang_code", "" + loginPrefManager.getStringValue("ar_Id"));
+                    loginPrefManager.setStringValue("Lang", "zh");
+                    loginPrefManager.setStringValue("Lang_code", "" + loginPrefManager.getStringValue("en_Id"));
 
                     Intent intent = new Intent(OrdersListsActivity.this, OrdersListsActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -388,7 +396,7 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
                 fabMenu.collapse();
 
                 Intent intentreport = new Intent(OrdersListsActivity.this, ReportActivity.class);
-//                intentreport.putExtra("","");
+                //                intentreport.putExtra("","");
                 startActivity(intentreport);
             }
         });
@@ -613,31 +621,31 @@ public class OrdersListsActivity extends LocalizationActivity implements GoogleA
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-//        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
-//
-//            if (resultCode == RESULT_OK) {
-//
-//                Place place = PlaceAutocomplete.getPlace(this, data);
-//
-//
-//                Log.e("place", "" + place);
-//                Log.e("data", "Place: " + place.getAddress());
-//                Log.e("lat", "" + place.getLatLng().latitude);
-//                Log.e("lat", "" + place.getLatLng().longitude);
-//
-//
-//                address_text.setText(place.getAddress());
-//
-//            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
-//
-//                Status status = PlaceAutocomplete.getStatus(this, data);
-//                Log.e("data", status.getStatusMessage());
-//
-//            } else if (resultCode == RESULT_CANCELED) {
-//                // The user canceled the operation.
-//            }
-//
-//        }
+        //        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
+        //
+        //            if (resultCode == RESULT_OK) {
+        //
+        //                Place place = PlaceAutocomplete.getPlace(this, data);
+        //
+        //
+        //                Log.e("place", "" + place);
+        //                Log.e("data", "Place: " + place.getAddress());
+        //                Log.e("lat", "" + place.getLatLng().latitude);
+        //                Log.e("lat", "" + place.getLatLng().longitude);
+        //
+        //
+        //                address_text.setText(place.getAddress());
+        //
+        //            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+        //
+        //                Status status = PlaceAutocomplete.getStatus(this, data);
+        //                Log.e("data", status.getStatusMessage());
+        //
+        //            } else if (resultCode == RESULT_CANCELED) {
+        //                // The user canceled the operation.
+        //            }
+        //
+        //        }
 
         switch (requestCode) {
             // Check for the integer request code originally supplied to startResolutionForResult().

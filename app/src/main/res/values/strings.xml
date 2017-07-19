@@ -20,6 +20,7 @@
     <!--select language activity-->
     <string name="select_language">Select language</string>
     <string name="btn_arabic">Arabic</string>
+    <string name="btn_zh">Chinese</string>
     <string name="btn_english">English</string>
     <string name="welcome">Welcome!</string>
     <string name="welcome_content">You are one step away from enjoying the best shopping experience ever</string>

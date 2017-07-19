@@ -75,9 +75,10 @@ public class ReportActivity extends LocalizationActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        if (LanguageSetting.getLanguage().equals("en")) {
+        if (LanguageSetting.getLanguage().equals("en") || LanguageSetting.getLanguage().equals
+                ("zh")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_en);
-        } else {
+        } else if (LanguageSetting.getLanguage().equals("ar")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_ar);
         }
 

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/white">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:gravity="center_horizontal"
-        android:id="@+id/linearLayout">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/select_language"
             android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/black" />
+            android:text="@string/select_language"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -29,15 +29,15 @@
             android:layout_weight="1">
 
             <RadioButton
+                android:id="@+id/select_lang_zh_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/select_lang_arabic_btn"
-                android:textColor="@drawable/select_lang_btn_textcolor_selector"
                 android:background="@drawable/select_lang_btn_selector"
-                android:text="@string/btn_arabic"
                 android:button="@null"
                 android:gravity="center"
-                android:minHeight="50dp"/>
+                android:minHeight="50dp"
+                android:text="@string/btn_zh"
+                android:textColor="@drawable/select_lang_btn_textcolor_selector"/>
 
             <View
                 android:layout_width="102dp"
@@ -45,73 +45,74 @@
                 android:background="@android:color/darker_gray"/>
 
             <RadioButton
+                android:id="@+id/select_lang_english_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/select_lang_english_btn"
+                android:background="@drawable/select_lang_btn_selector"
                 android:button="@null"
                 android:checked="true"
                 android:gravity="center"
-                android:background="@drawable/select_lang_btn_selector"
-                android:textColor="@drawable/select_lang_btn_textcolor_selector"
+                android:minHeight="50dp"
                 android:text="@string/btn_english"
-                android:minHeight="50dp" />
+                android:textColor="@drawable/select_lang_btn_textcolor_selector"/>
         </RadioGroup>
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_above="@+id/linearLayout"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:gravity="center"
+        android:orientation="vertical"
         tools:ignore="RtlHardcoded">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/welcome"
-                android:textStyle="bold"
-                android:textColor="@android:color/black" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/welcome_content"
                 android:gravity="center"
-                android:textColor="@android:color/darker_gray" />
+                android:text="@string/welcome_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/darker_gray"/>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/linearLayout"
         android:gravity="center"
-        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
         tools:ignore="RtlHardcoded">
+
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
-            android:elevation="@dimen/elevation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_navigation_arrow_forward"
             android:layout_gravity="center"
-            app:fabSize="mini"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="@dimen/elevation"
+            android:src="@drawable/ic_action_navigation_arrow_forward"
             app:backgroundTint="@color/colorPrimary"
-            android:layout_margin="@dimen/fab_margin" />
+            app:fabSize="mini"/>
     </LinearLayout>
 </RelativeLayout>

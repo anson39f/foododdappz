@@ -83,9 +83,10 @@ public class NotificationListActivity extends LocalizationActivity implements Or
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        if (LanguageSetting.getLanguage().equals("en")) {
+        if (LanguageSetting.getLanguage().equals("en") || LanguageSetting.getLanguage().equals
+                ("zh")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_en);
-        } else {
+        } else if (LanguageSetting.getLanguage().equals("ar")) {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_arrow_back_ic_ar);
         }
 
@@ -127,7 +128,7 @@ public class NotificationListActivity extends LocalizationActivity implements Or
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
+        //        super.onBackPressed();
 
         Intent welcom_intent = new Intent("notifi_broadcast");
         LocalBroadcastManager.getInstance(NotificationListActivity.this).sendBroadcast(welcom_intent);

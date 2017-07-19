@@ -1,0 +1,374 @@
+<resources>
+
+    <string name="app_name">Oddfoody Driver</string>
+
+    <!--Testing Credential-->
+    <!--<string name="user_email_id">hariprasath.s@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">selvam@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">senthilkumar.a@nextbrainitech.com</string>-->
+    <!--<string name="user_email_id">seetha.s@nextbrainitech.com</string>-->
+
+    <!--<string name="user_password">123456</string>-->
+
+    <!--Dialog-->
+    <string name="cancel_btn_txt">取消</string>
+    <string name="ok_btn_txt">确认</string>
+    <string name="log_out_btn_txt">注销</string>
+    <string name="exit_btn_txt">退出</string>
+    <!---->
+
+    <!--select language activity-->
+    <string name="select_language">选择语言</string>
+    <string name="btn_arabic">阿拉伯语</string>
+    <string name="btn_zh">中文</string>
+    <string name="btn_english">英文</string>
+    <string name="welcome">欢迎!</string>
+    <string name="welcome_content">You are one step away from enjoying the best shopping experience ever</string>
+    <!---->
+
+    <!--splash screen-->
+    <string name="screen_over_lay_title">Screen overlay detected</string>
+    <string name="screen_over_lay_permission_msg_txt">使用应用必须打开屏幕管理的权限</string>
+    <string name="screen_over_lay_cancel_btn_txt">取消</string>
+    <string name="screen_over_lay_ok_btn_txt">确认</string>
+    <!---->
+
+    <!--Signin-->
+    <string name="Sign_in">登录</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="error_msg_Email">无效的邮箱或者密码</string>
+    <string name="err_msg_password">密码必须至少包含六个字母和至少一个大写字母</string>
+    <string name="login_type">2</string>
+    <string name="hint_dont_have_an_account">没有账号?</string>
+    <string name="hint_create_one">创建账号!</string>
+
+
+    <!---->
+
+    <!--Signup-->
+    <string name="sign_up">签名</string>
+    <string name="first_name_txt">First Name</string>
+    <string name="last_name_txt">Last Name</string>
+    <string name="hint_email">邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_cnfrm_pswd">确认密码</string>
+    <string name="hint_mobile">手机号</string>
+    <string name="hint_address">联系地址</string>
+    <string name="hint_driving_licence">车辆牌照</string>
+    <string name="hint_driver_licence">驾驶证</string>
+    <string name="id_card">身份证</string>
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt">I agree OddfoodyDriver\'s Terms &amp; Conditions,Privacy &amp; policy and Contracts for users </string>-->
+    <string name="hint_already_have_an_account">用户已经存在?</string>
+    <string name="hint_login">登录!</string>
+    <string name="sign_up_cancel">取消</string>
+    <string name="sign_up_btn">签名</string>
+    <string name="pick_image_intent_text">选择照片:</string>
+    <string name="pick_loc_select_city_txt">选择城市</string>
+    <string name="pick_country_txt">选择国家</string>
+    <string name="err_msg_select_any_loc_txt">没有该城市，请切换国家.</string>
+    <string name="err_msg_select_any_loc">请选择城市</string>
+    <string name="err_msg_city_not_found">没有找到该国家</string>
+    <string name="err_msg_no_loc_found">没有找到该城市</string>
+    <string name="err_msg_select_any_city">请选择国家</string>
+    <string name="signup_success">感谢注册我们的应用，我们的工作人员会尽快联系您。</string>
+    <string name="email_existed">邮箱已经注册了</string>
+    <!--<string name="country_code">+966</string>-->
+    <string name="yes">OK</string>
+    <string name="hint_i_agree_the_terms_and_conditions_txt">我同意OddfoodyDriver的</string>
+    <string name="terms_conditions">外卖员合同</string>
+
+    <!--&lt;!&ndash;error message&ndash;&gt;-->
+    <!--<string name="err_msg_first_name">Enter the first name</string>-->
+    <!--<string name="err_msg_last_name">Enter the last name</string>-->
+    <!--<string name="err_msg_email">Enter valid mail ID</string>-->
+    <!--<string name="err_signmsg_password">Enter the password</string>-->
+    <!--<string name="err_signmsg_mobile">Enter the mobile number</string>-->
+    <!--<string name="err_msg_valid_mobile">Enter the valid mobile number</string>-->
+    <!--<string name="incorrect_pswd">Password mismatch.</string>-->
+    <!--<string name="err_msg_checkbox">Please agree the terms and conditions.</string>-->
+    <!--<string name="err_msg_location">Please select location</string>-->
+
+    <!--&lt;!&ndash;Contitions & conditions&ndash;&gt;-->
+    <!--<string name="terms_conditions_tit_txt">Terms &amp; Conditions</string>-->
+    <!--<string name="privacy_policy">Privacy &amp; policy</string>-->
+    <!--<string name="contracts_users">Contracts for users</string>-->
+
+
+    <!--ForgotPassword-->
+    <string name="forgot_pass_title">忘记密码</string>
+    <string name="submit_button">提交</string>
+    <!---->
+
+    <!--Orders-->
+    <string name="nav_orders">订单</string>
+    <string name="order_date">Wed, Aug 30, 10:10 AM</string>
+    <string name="order_id">订单号 : 124856</string>
+    <string name="order_amount">320</string>
+    <string name="pickup">City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</string>
+    <string name="destination">City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</string>
+    <!---->
+
+    <array name="order_date_array">
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+        <item>Wed, Aug 30, 10:10 AM</item>
+    </array>
+
+    <array name="order_id_array">
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+        <item>Order ID : 124856</item>
+    </array>
+
+    <array name="order_amount_array">
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+        <item>320</item>
+    </array>
+
+    <array name="order_item_array">
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+        <item>Plate of Chicken</item>
+    </array>
+
+    <array name="order_quan_array">
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </array>
+
+    <array name="pick_up_array">
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, 142 Street, Kuwait City,Al Asimah, Kuwait.</item>
+    </array>
+
+    <array name="destination_array">
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+        <item>City Tower Hotel, vegetable Market Street, Kuwait City,Al Asimah, Kuwait.</item>
+    </array>
+
+    <!---->
+
+    <!--Profile-->
+    <string name="first_name">First Name</string>
+    <string name="sur_name">Surname</string>
+    <string name="contact_number">联系手机号</string>
+    <string name="address">地址</string>
+    <string name="err_msg_name">请输入你的 full name</string>
+    <string name="err_msg_sur_name">请输入你的 sur name</string>
+    <string name="err_msg_mobile">请输入你的手机号</string>
+    <string name="err_msg_mobile_characters">手机号不少于10个数字</string>
+    <string name="err_msg_address">请输入你的地址</string>
+    <string name="nav_profile">简介</string>
+    <string name="hint_gender">性别</string>
+    <string name="hint_female">女</string>
+    <string name="hint_male">男</string>
+    <string name="change_password_txt">修改密码</string>
+    <string name="driver_status">外卖员状态</string>
+    <string name="available">在线</string>
+    <string name="busy">忙碌</string>
+    <string name="offline">离线</string>
+
+
+    <!--Change password-->
+    <string name="old_password_txt">旧密码</string>
+    <string name="old_password_error_txt">请输入旧密码</string>
+    <string name="new_password_txt">新密码</string>
+    <string name="new_password_error_txt">请输入新密码</string>
+    <string name="confirm_password_txt">确认密码</string>
+    <string name="confirm_password_error_txt">输入确认密码</string>
+
+    <string name="old_password_miss_match_txt">错误密码，请输入你的正确密码</string>
+    <string name="confirm_password_miss_match_txt">确认你的密码是否正确</string>
+    <!---->
+
+    <!--Reports-->
+    <string name="nav_reports">表单</string>
+    <string name="pick_date">选择日期</string>
+    <string name="piechart_title1">交付</string>
+    <string name="piechart_title2">接单</string>
+    <string name="piechart_title3">分派</string>
+    <string name="no_recor_available_txt">没有记录</string>
+    <!---->
+
+
+    <!--fab-->
+    <string name="language_mode">阿拉伯语</string>
+    <string name="language_change">英语</string>
+    <string name="fab_report">报表</string>
+    <string name="support">支持</string>
+    <string name="log_out">注销</string>
+    <string name="fab_notifications">通知</string>
+    <!---->
+
+    <!--Order_detail-->
+    <string name="email_invoice">电子发票</string>
+    <string name="status">状态</string>
+    <string name="call">电话</string>
+    <string name="history">历史</string>
+
+
+
+
+    <!--No internet connection-->
+    <string name="no_internet_conn_tit_txt">没有网络连接</string>
+    <string name="no_internet_conn_msg_txt">没有网络连接，请打开网络</string>
+    <string name="no_internet_conn_ok_btn_txt">连接</string>
+    <!---->
+
+
+
+    <!--API-->
+    <string name="Device_Token">device_token</string>
+    <string name="Device_id">device_id</string>
+    <string name="name">Abdullah</string>
+    <string name="number">9962828791</string>
+    <string name="driver_name">Mohammed Hasim</string>
+    <string name="time">10:00 AM  :</string>
+    <string name="bill_details">订单详情</string>
+    <string name="initiated_text">接单</string>
+    <string name="processed_text">处理</string>
+    <string name="packed_text">打包</string>
+    <string name="dispatch_text">派遣</string>
+    <!--<string name="assigned">Assigned</string>-->
+    <!--<string name="picked">Picked up</string>-->
+    <string name="delivered_text">送达</string>
+    <string name="total">费用</string>
+    <string name="Tax">税</string>
+    <string name="grandtotal">合计</string>
+    <string name="Payment">实付</string>
+    <string name="quan">数量</string>
+    <string name="English">English</string>
+    <string name="delivery_charge_txt">配送费</string>
+
+    <string name="delivery_txt">配送</string>
+
+
+    <!--Orders List-->
+    <string name="order_list_empty_view_txt">没有订单</string>
+    <string name="message">提醒</string>
+    <string name="exit_dialog">是否确认要注销?</string>
+    <string name="log_out_or_exit_txt">是否确认退出应用?</string>
+    <string name="ordet_item_order_id_txt">订单号 :</string>
+    <string name="order_item_status_txt">状态 :</string>
+
+
+    <!--  Signature View   -->
+
+    <string name="signaturehelptext">请在下面签名</string>
+
+    <!--Location aleart-->
+    <string name="loc_aleart_content_txt">请启动您的位置才能使用此应用程序</string>
+    <string name="curr_loc_not_upd_msg_txt">当前位置未更新，请稍等。</string>
+
+
+    <!--Invoice Dialog-->
+    <string name="my_ord_det_invoice_txt">发票</string>
+
+
+    <string name="no_internet">没有网络连接</string>
+
+
+    <!--Support-->
+    <string name="support_name_txt">姓名</string>
+    <string name="support_email_txt">邮箱</string>
+    <string name="support_phone_no_txt">手机号</string>
+    <string name="support_address_txt">地址</string>
+
+    <!--&lt;!&ndash;Signup&ndash;&gt;-->
+    <!--<string name="sign_up">Sign Up</string>-->
+    <!--<string name="first_name_txt">First Name</string>-->
+    <!--<string name="last_name_txt">Last Name</string>-->
+    <!--<string name="hint_email">Email</string>-->
+    <!--<string name="hint_password">Password</string>-->
+    <!--<string name="hint_cnfrm_pswd">Confirm Password</string>-->
+    <!--<string name="hint_mobile">Mobile Number</string>-->
+    <!--<string name="hint_address">Contact Address</string>-->
+    <!--<string name="hint_driving_licence">Driving Licence</string>-->
+    <!--<string name="hint_driver_licence">Driver Licence</string>-->
+    <!--<string name="id_card">Identification Card</string>-->
+    <!--<string name="hint_i_agree_the_terms_and_conditions_txt">I agree OddfoodyDriver\'s <![CDATA[<font color="#18c47c"><b>Terms &amp; Conditions </b></font>]]>, <![CDATA[<font color="#18c47c"><b>Privacy &amp; policy</b></font>]]> and <![CDATA[<font color="#18c47c"><b>Contracts for users </b></font>]]></string>-->
+    <!--<string name="hint_already_have_an_account">Already have an account?</string>-->
+    <!--<string name="hint_login">Login!</string>-->
+    <!--<string name="sign_up_cancel">Cancel</string>-->
+    <!--<string name="sign_up_btn">Sign up</string>-->
+    <!--<string name="pick_image_intent_text">Select your image:</string>-->
+    <!--<string name="pick_loc_select_city_txt">Select city</string>-->
+    <!--<string name="pick_country_txt">Select Country</string>-->
+    <!--<string name="err_msg_select_any_loc_txt">No city found. Please change the Country.</string>-->
+    <!--<string name="err_msg_select_any_loc">Select any city.</string>-->
+    <!--<string name="err_msg_city_not_found">Country not found.</string>-->
+    <!--<string name="err_msg_no_loc_found">City not found.</string>-->
+    <!--<string name="err_msg_select_any_city">Select any country</string>-->
+
+    <!--error message-->
+    <string name="error_msg_name">请填写字母</string>
+    <string name="err_msg_first_name">输入 first name</string>
+    <string name="err_msg_last_name">输入 last name</string>
+    <string name="err_msg_email">输入有效的邮箱</string>
+    <string name="err_signmsg_password">输入密码</string>
+    <string name="err_signmsg_mobile">输入手机号</string>
+    <string name="err_msg_valid_mobile">输入有效的手机号</string>
+    <string name="incorrect_pswd">密码不匹配</string>
+    <string name="err_msg_checkbox">请同意条款和细则</string>
+    <string name="err_msg_location">请选择地区</string>
+    <string name="attachment">需要所有的附件</string>
+    <string name="uploadprofilephoto">请更新简介的图片</string>
+
+    <!--Contitions & conditions-->
+    <string name="terms_conditions_tit_txt">条款 &amp; 细则</string>
+    <string name="privacy_policy">隐私 &amp; 政策</string>
+    <string name="contracts_users">用户合约</string>
+
+
+    <string name="notifi_list_empty_err_msg_txt">没有通知</string>
+
+    <string name="accept">接受</string>
+    <string name="decline">婉拒</string>
+    <string name="reject">拒绝</string>
+
+    <string name="accepted">接受</string>
+    <string name="declined">婉拒</string>
+    <string name="rejected">拒绝</string>
+
+
+    <string name="order_conf_dia_tit_txt">有一个新订单分配</string>
+    <string name="please_add_atta_txt">需要附件</string>
+    <string name="attachemnt_receipt_err_msg">无法读取附件</string>
+
+
+    <!--  Order Confirmation Dialog  -->
+
+    <string name="btn_accept">接受</string>
+    <string name="btn_decline">拒接</string>
+
+
+    <string name="ord_det_pahone_no_err_msg">没有找到手机号</string>
+
+
+    <!--Slide Unlock Button-->
+    <string name="slidetounlock_label">滑动解锁</string>
+    <string name="slidetounlock_label_default">滑动解锁</string>
+
+
+
+    <string name="click_here"><u>点击这里</u></string>
+    <string name="ord_det_signature_txt">签名</string>
+    <string name="ord_det_sig_add_btn_txt">添加</string>
+    <string name="ord_det_sig_update_btn_txt">更新</string>
+    <string name="ord_det_images_btn_txt">图片</string>
+
+
+</resources>
